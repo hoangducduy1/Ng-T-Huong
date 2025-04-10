@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ng T Huongg(Hanna)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="vanta-bg"></div>
+
+  <div class="container">
+    <img src="avatar.jpg" alt="Avatar" class="avatar" />
+    <h1>Ng T Huongg(Hanna)</h1>
+    <p>I'm a deputy chairperson of a DCC!</p>
+    <div class="music-controls">
+      <button class="music-btn play" onclick="playMusic()" title="Play Music">
+        ▶
+      </button>
+      <button class="music-btn stop" onclick="stopMusic()" title="Stop Music">
+        ⏹
+      </button>
+    </div>
+    <div class="links">
+      <a href="https://www.instagram.com/hanna.ne_08?igsh=MWRjdXdqbXcweDN6Mg%3D%3D&utm_source=qr" target="_blank">Instagram</a>
+      <a href="https://www.facebook.com/nghuongdangyeu?mibextid=wwXIfr&rdid=SLA02MHAvWL0qcAT&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1GxMpb3b4o%2F%3Fmibextid%3DwwXIfr#" target="_blank">Facebook</a>
+      <a href="https://www.tiktok.com/@hanna.ne08" target="_blank">Tiktok</a>
+    </div>
+  </div>
+
+  <audio id="backgroundMusic" loop>
+    <source src="music.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

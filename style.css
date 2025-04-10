@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #0d0d0d;
+  color: #fff;
+  overflow: hidden;
+}
+
+#vanta-bg {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+
+.container {
+  text-align: center;
+  margin-top: 5%;
+  z-index: 10;
+  position: relative;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  transition: transform 0.6s;
+}
+
+.avatar:hover {
+  transform: rotateY(180deg);
+}
+
+.buttons button, .links a {
+  margin: 10px;
+  padding: 10px 20px;
+  border: none;
+  background: #333;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.links a:hover, .buttons button:hover {
+  background: #555;
+}
+.music-controls {
+  margin-top: 20px;
+}
+
+.music-btn {
+  width: 60px;
+  height: 60px;
+  margin: 10px;
+  border: none;
+  border-radius: 50%;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: linear-gradient(135deg, #1e1e1e, #444);
+  color: #00ffcc;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+}
+
+.music-btn:hover {
+  transform: scale(1.1) rotate(5deg);
+  background: linear-gradient(135deg, #00ffcc, #007f7f);
+  color: white;
+}
+
+.music-btn.play::after {
+  content: '';
+  display: block;
+  position: absolute;
+}
+
+.music-btn.stop {
+  color: #ff5c5c;
+}
+
+.music-btn.stop:hover {
+  background: linear-gradient(135deg, #ff5c5c, #990000);
+  color: white;
+}
